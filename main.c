@@ -18,7 +18,7 @@ void display_orders(){
     fclose(file);
 }
 
-// เพิ่มข้อมูลใหม่
+// เพิ่ม order ใหม่
 void add_order(){
     FILE *file = fopen(FILENAM, "a");
     if (!file){
@@ -240,7 +240,6 @@ int main(){
         break;
     case 6:
         printf("Exiting Program...\n");
-        return 0;
     default:
         printf("Invalid Choice!\n");
         }
